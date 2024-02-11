@@ -1,0 +1,91 @@
+.about{
+    width: 80%;
+    margin: 60px auto;
+}
+.about .title{
+    font-size: 35px;
+    color: var(--main-color);
+}
+.about-details{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+    background-image:linear-gradient(rgba(20 , 20 , 20 , 0.7), rgba(20 ,20 ,20 , 0.7)) ,  url(../../images/hero/slider-bg2.jpg);
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail .n{
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.detail p{
+    font-size: 20px;
+    letter-spacing: 2px;
+   font-weight: bold;
+}
+.testimonails-flex{
+    margin-top: 100px;
+}
+.testimonail > * {
+    margin-bottom: 20px;
+}
+
+.testimonail{
+    padding: 40px;
+   text-align: center;
+   background-color: #ddd;
+   color: #000;
+
+}
+.testimonail img{
+    margin:20px auto;
+    width: 100px;
+    height: 100px;
+}
+.testimonail p{
+    width: 50%;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.testimonail div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.testimonail div .star-icon{
+    color: var(--main-color);
+    text-align: center;
+}
+
+@media screen and (max-width : 480px){
+    .about{
+        width: 80%;
+        margin: 60px auto;
+    }
+    .about .title{
+        font-size: 35px;
+        color: var(--main-color);
+    }
+    .about-details{
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .testimonail{
+        padding: 10px;
+    }
+    .testimonail p{
+        width: 90%;
+    }
+}

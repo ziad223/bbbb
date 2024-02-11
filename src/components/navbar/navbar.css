@@ -1,0 +1,134 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 555;
+
+}
+.navbar .left-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-icon{
+    color: #000;
+}
+.navbar img{
+    width: 60px;
+    height: 60px;
+}
+.navbar .left-nav h3{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.middle-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+.middle-nav ul li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 18px;
+    transition: 0.5s;
+    padding: 10px;
+}
+.middle-nav ul li a:hover{
+    background-color: #fff;
+}
+hr{
+    opacity: 0.5;
+}
+.middle-nav ul li a:hover{
+    color: var(--main-color);
+}
+.right-nav{
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.right-nav  .nav-icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.heart-icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.right-nav span{
+  background-color: red;
+  color: #fff;
+  width: 15px;
+  height: 18px;
+  text-align: center;
+  padding: 2px;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: -13px;
+}
+.menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width : 480px){
+    .navbar{
+        padding: 20px 40px;
+        position: relative;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .left-nav h3{
+        display: none;
+    }
+    .middle-nav ul{
+        display: flex;
+        gap: 5px;
+    }
+    .middle-nav ul li a{
+        font-size: 16px;
+    }
+  
+    
+    hr{
+        opacity: 0.5;
+    }
+    .middle-nav ul li a:hover{
+        color: var(--main-color);
+    }
+    .right-nav{
+        position: relative;
+        display: flex;
+        gap: 20px;
+    }
+    .right-nav  .nav-icon{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .heart-icon{
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .right-nav span{
+      background-color: red;
+      color: #fff;
+      width: 15px;
+      height: 18px;
+      text-align: center;
+      padding: 2px;
+      border-radius: 50%;
+      position: absolute;
+      right: 3px;
+      top: -13px;
+    }
+}

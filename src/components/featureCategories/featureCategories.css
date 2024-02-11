@@ -1,0 +1,50 @@
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-size: 35px;
+  color: var(--main-color);
+}
+.title p {
+  width: 50%;
+  margin: 20px auto;
+  line-height: 1.5;
+  font-size: 18px;
+  color: grey;
+}
+.feature-content {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.feature-content .feature {
+  width: 28%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.feature-content .feature div > * {
+  margin-bottom: 10px;
+}
+.feature-content .feature div {
+  color: grey;
+}
+
+@media screen and (max-width: 480px) {
+  .feature-categories .title h2 {
+    font-size: 25px;
+  }
+  .feature-categories .title p {
+    width: 90%;
+  }
+  .feature-content {
+    flex-direction: column;
+  }
+  .feature-content .feature {
+    width: 90%;
+  }
+}
